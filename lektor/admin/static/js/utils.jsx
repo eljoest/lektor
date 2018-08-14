@@ -585,6 +585,10 @@ const utils = {
     } else {
       return event.ctrlKey
     }
+  },
+
+  isMetaKeyOnly (event) {
+    return utils.isMetaKey(event) && !event.altKey && !event.shiftKey
   }
 }
 

@@ -59,7 +59,7 @@ class BreadCrumbs extends RecordComponent {
 
   _onKeyPress (event) {
     // meta+g is open find files
-    if (event.which === 71 && utils.isMetaKey(event)) {
+    if (event.keyCode === 71 && utils.isMetaKeyOnly(event)) {
       event.preventDefault()
       dialogSystem.showDialog(FindFiles)
     }
